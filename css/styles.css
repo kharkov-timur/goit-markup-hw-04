@@ -475,13 +475,14 @@ a {
   animation: slideIn 0.5s forwards;
 }
 
-.modal-close-icon {
+.modal-close-button {
   position: absolute;
   top: 24px;
   right: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0;
   width: 24px;
   height: 24px;
   border-radius: 50%;
@@ -489,17 +490,17 @@ a {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.modal-close-icon .icon {
+.modal-close-button .icon {
   width: 8px;
   height: 8px;
 }
 
-.modal-close-icon:hover {
+.modal-close-button:hover {
   background: #404bbf;
   cursor: pointer;
 }
 
-.modal-close-icon:hover .icon {
+.modal-close-button:hover .icon {
   fill: #ffffff;
 }
 
