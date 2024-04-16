@@ -1,1 +1,4 @@
-# goit-markup-hw-04
+# goit-markup-hw-03
+
+## Portfolio project
+### HTML layout with CSS styles
