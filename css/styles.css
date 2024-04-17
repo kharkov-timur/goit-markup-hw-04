@@ -57,6 +57,16 @@ a {
   margin: 0 auto;
 }
 
+.link {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link:hover {
+  color: var(--button-hover-color);
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -103,9 +113,22 @@ a {
   gap: 40px;
 }
 
-.navigation-items .link {
+.navigation-item .link {
   display: block;
+  position: relative;
   padding: 24px 0;
+}
+
+.navigation-item:hover .link::after,
+.navigation-item:focus .link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
 }
 
 .contacts {
@@ -145,16 +168,6 @@ a {
 
 .card-text {
   color: var(--card-text-color);
-}
-
-.link {
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.link:hover {
-  color: var(--button-hover-color);
 }
 
 .image {
